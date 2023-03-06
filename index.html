@@ -160,26 +160,23 @@
                   <li class="socials-item">
                     <a class="socials-link" href=""
                       ><svg class="socials-icon">
-                        <use
-                          href="./images/icons.svg#icon-instagram-2"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="socials-item">
                     <a class="socials-link" href=""
                       ><svg class="socials-icon">
-                        <use
-                          href="./images/icons.svg#icon-twitter-1"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="socials-item">
                     <a class="socials-link" href=""
                       ><svg class="socials-icon">
-                        <use
-                          href="./images/icons.svg#icon-facebook-1"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="socials-item">
                     <a class="socials-link" href=""
@@ -341,7 +338,7 @@
               <a class="company-link" href=""
                 ><svg class="company-icon">
                   <use
-                    href="./images/symbol-defs2.svg#icon-logo-yaco"
+                    href="./images/sprite-customer.svg#icon-logo-yaco"
                   ></use></svg
               ></a>
             </li>
@@ -349,21 +346,7 @@
               <a class="company-link" href=""
                 ><svg class="company-icon">
                   <use
-                    href="./images/symbol-defs2.svg#icon-logo-here"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="company-item">
-              <a class="company-link" href=""
-                ><svg class="company-icon">
-                  <use href="./images/symbol-defs2.svg#icon-logo-2"></use></svg
-              ></a>
-            </li>
-            <li class="company-item">
-              <a class="company-link" href=""
-                ><svg class="company-icon">
-                  <use
-                    href="./images/symbol-defs2.svg#icon-logo-fosters"
+                    href="./images/sprite-customer.svg#icon-logo-here"
                   ></use></svg
               ></a>
             </li>
@@ -371,7 +354,7 @@
               <a class="company-link" href=""
                 ><svg class="company-icon">
                   <use
-                    href="./images/symbol-defs2.svg#icon-logo-brand"
+                    href="./images/sprite-customer.svg#icon-logo-2"
                   ></use></svg
               ></a>
             </li>
@@ -379,7 +362,23 @@
               <a class="company-link" href=""
                 ><svg class="company-icon">
                   <use
-                    href="./images/symbol-defs2.svg#icon-logo-tagline"
+                    href="./images/sprite-customer.svg#icon-logo-fosters"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="company-item">
+              <a class="company-link" href=""
+                ><svg class="company-icon">
+                  <use
+                    href="./images/sprite-customer.svg#icon-logo-brand"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="company-item">
+              <a class="company-link" href=""
+                ><svg class="company-icon">
+                  <use
+                    href="./images/sprite-customer.svg#icon-logo-tagline"
                   ></use></svg
               ></a>
             </li>
@@ -423,22 +422,127 @@
               ></a>
             </li>
             <li class="media-item">
-              <a class="media-link" href=""
-                ><svg class="media-icon">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-              ></a>
+              <a class="media-link" href="">
+                <svg class="media-icon">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
+
+        <div class="div-subscribe">
+          <p class="footer-title">Subscribe</p>
+          <form
+            class="form-subscribe"
+            name="footer-form"
+            autocomplete="off"
+            novalidate
+          >
+            <input class="input-footer" type="email" placeholder="E-mail" />
+            <button class="btn-subscribe" type="submit">
+              Subscribe
+              <svg class="svg-subscribe">
+                <use href="./images/sprite-input.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
-            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            <use href="./images/sprite-close.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <!--  Form   -->
+        <form class="form" name="contact-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label" for="user-name"
+              ><span class="label-input-descr">Name</span></label
+            >
+            <span class="input-svg-wrapper">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="user-name"
+                autofocus
+                pattern="^[a-zA-Z-яА-Я]+" />
+              <svg class="modal-icon">
+                <use
+                  href="./images/sprite-input.svg#icon-person-black"
+                ></use></svg
+            ></span>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-phone"
+              ><span class="label-input-descr">Phone</span></label
+            >
+            <span class="input-svg-wrapper">
+              <input
+                class="form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                pattern="^/+[0-9]{12}" />
+              <svg class="modal-icon">
+                <use
+                  href="./images/sprite-input.svg#icon-phone-black"
+                ></use></svg
+            ></span>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-email"
+              ><span class="label-input-descr">Email</span></label
+            >
+            <span class="input-svg-wrapper">
+              <input
+                class="form-input"
+                id="user-email"
+                type="email"
+                name="user-email" />
+              <svg class="modal-icon">
+                <use
+                  href="./images/sprite-input.svg#icon-email-black"
+                ></use></svg
+            ></span>
+          </div>
+          <div class="comment">
+            <label for="user-comment"
+              ><span class="label-input-descr">Comment</span></label
+            >
+            <textarea
+              class="textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox-wrapper">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              name="privacy-policy"
+              id="policy"
+            />
+            <span class="check-icon"
+              ><svg><use href="./images/click.svg"></use></svg
+            ></span>
+            <label class="checkbox-descr" for="policy">
+              I accept the terms and conditions of the
+              <a href=""> Privacy Policy</a></label
+            >
+          </div>
+
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
